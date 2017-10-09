@@ -1,0 +1,14 @@
+diff --git a/Tables/dbo.Settings.sql b/Tables/dbo.Settings.sql
+index ee3196b..d3a31cf 100644
+--- a/Tables/dbo.Settings.sql
++++ b/Tables/dbo.Settings.sql
+@@ -155,7 +155,8 @@
+ [WorkOrderMaintenanceStatsThreshold1] [int] NOT NULL,
+ [WorkOrderMaintenanceStatsThreshold2] [int] NULL,
+ [AccountStatementLogoType] [nvarchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL CONSTRAINT [DF__Settings__Accoun__4E0B1F95] DEFAULT ('None'),
+-[ReadyToGoLive] [bit] NOT NULL
++[ReadyToGoLive] [bit] NOT NULL,
++[NewColumn] [int] NOT NULL
+ ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+ GO
+ ALTER TABLE [dbo].[Settings] ADD CONSTRAINT [PK_Account] PRIMARY KEY CLUSTERED  ([AccountID]) ON [PRIMARY]
